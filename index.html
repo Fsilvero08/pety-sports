@@ -4,22 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pety Sport</title>
+
+    <title>Pety Sport | Botines y Championes</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
             background: #111;
             color: white;
         }
 
+        /* HEADER */
+
         header {
             background: #0f0;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             color: black;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* MENU */
+
+        nav {
+            background: #000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0f0;
+        }
+
+        /* PRODUCTOS */
 
         .productos {
             display: flex;
@@ -29,12 +65,20 @@
             flex-wrap: wrap;
         }
 
+        /* TARJETAS */
+
         .card {
             background: #222;
             padding: 20px;
             width: 250px;
             border-radius: 10px;
             text-align: center;
+            transition: 0.3s;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
         }
 
         .card img {
@@ -42,57 +86,153 @@
             border-radius: 10px;
         }
 
+        .card h2 {
+            margin-top: 15px;
+        }
+
+        .card p {
+            font-size: 20px;
+            color: #0f0;
+            font-weight: bold;
+        }
+
+        /* BOTON */
+
         button {
             background: #0f0;
             border: none;
-            padding: 10px;
+            padding: 12px;
             width: 100%;
             margin-top: 10px;
             cursor: pointer;
             font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 16px;
         }
+
+        button:hover {
+            background: white;
+        }
+
+        /* FOOTER */
 
         footer {
             text-align: center;
             padding: 20px;
             background: #000;
+            margin-top: 30px;
+        }
+
+        /* WHATSAPP FLOTANTE */
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px) {
+
+            .productos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
+
         <h1>PETY SPORT</h1>
         <p>Botines • Championes • Ropa Deportiva</p>
+
     </header>
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="">Inicio</a>
+        <a href="">Productos</a>
+        <a href="">Contacto</a>
+
+    </nav>
+
+    <!-- PRODUCTOS -->
 
     <section class="productos">
 
+        <!-- PRODUCTO 1 -->
+
         <div class="card">
-            <img src="https://www.kemsa.com.py/storage/sku/136744.webp" alt="">
-            <h2>Botin Kappa</h2>
+
+            <img src="https://www.kemsa.com.py/storage/sku/136744.webp" alt="Botin Kappa">
+
+            <h2>Botín Kappa</h2>
+
             <p>Gs. 350.000</p>
 
             <a href="https://wa.me/595XXXXXXXXX">
+
                 <button>Comprar</button>
+
             </a>
+
         </div>
 
+        <!-- PRODUCTO 2 -->
+
         <div class="card">
-            <img src="https://www.kemsa.com.py/storage/sku/136746.webp" alt="">
-            <h2>Botin Kappa</h2>
+
+            <img src="https://www.kemsa.com.py/storage/sku/136746.webp" alt="Botin Kappa">
+
+            <h2>Botín Kappa</h2>
+
             <p>Gs. 420.000</p>
 
             <a href="https://wa.me/595XXXXXXXXX">
+
                 <button>Comprar</button>
+
             </a>
+
         </div>
 
     </section>
 
+    <!-- WHATSAPP -->
+
+    <a href="https://wa.me/595XXXXXXXXX" class="whatsapp">
+
+        WhatsApp
+
+    </a>
+
+    <!-- FOOTER -->
+
     <footer>
-        © 2026 Pety Sport
+
+        © 2026 Pety Sport - Todos los derechos reservados
+
     </footer>
 
 </body>
