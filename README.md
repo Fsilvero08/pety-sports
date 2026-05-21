@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pety Sport</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #0f0;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #0f0;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PETY SPORT</h1>
+        <p>Botines • Championes • Ropa Deportiva</p>
+    </header>
+
+    <section class="productos">
+
+        <div class="card">
+            <img src="https://www.kemsa.com.py/storage/sku/136744.webp" alt="">
+            <h2>Botines Nike</h2>
+            <p>Gs. 350.000</p>
+
+            <a href="https://wa.me/595XXXXXXXXX">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="">
+            <h2>Champion Adidas</h2>
+            <p>Gs. 420.000</p>
+
+            <a href="https://wa.me/595XXXXXXXXX">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Pety Sport
+    </footer>
+
+</body>
+
+</html>
